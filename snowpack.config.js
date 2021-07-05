@@ -5,9 +5,9 @@ module.exports = {
   },
   plugins: [
     '@snowpack/plugin-svelte',
-    '@snowpack/plugin-optimize',
     '@snowpack/plugin-babel',
-    '@snowpack/plugin-sass'
+    '@snowpack/plugin-sass',
+    '@snowpack/plugin-optimize'
   ],
   alias: {
     '~': './src'
