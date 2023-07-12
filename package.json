@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "lint-staged": {
-		"**/*.{ts,tsx}": [
+		"**/*.{ts,svelte}": [
 			"eslint --fix",
 			"prettier --write"
 		]
