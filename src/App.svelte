@@ -3,12 +3,13 @@
 </script>
 
 <main>
+	<div class="test">TEST</div>
 	<TodoHeader />
 	<TodoInfo />
 	<TodoList />
 </main>
 
-<style>
+<style lang="scss">
 	main {
 		display: flex;
 		flex-direction: column;
