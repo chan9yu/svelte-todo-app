@@ -4,6 +4,7 @@ import { defineConfig, UserConfig } from 'vite';
 
 const config = <UserConfig>defineConfig({
 	plugins: [svelte()],
+	base: '/svelte-todo-app/',
 	server: {
 		host: 'localhost',
 		port: 3040

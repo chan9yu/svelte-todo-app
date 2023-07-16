@@ -3,6 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://chan9yu.github.io/svelte-todo-app/",
 	"lint-staged": {
 		"**/*.{ts,svelte}": [
 			"eslint --fix",
@@ -19,6 +20,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"deploy": "gh-pages -d dist",
 		"commit": "pnpm git-cz",
 		"prepare": "husky install",
 		"prepare:permission": "chmod +x .husky/*"
@@ -36,6 +38,8 @@
 		"eslint": "^8.42.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-svelte": "^2.32.2",
+		"gh-pages": "^5.0.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.2.3",
 		"prettier": "^2.8.8",
