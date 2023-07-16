@@ -7,12 +7,12 @@ const config = <UserConfig>defineConfig({
 	base: '/svelte-todo-app/',
 	server: {
 		host: 'localhost',
-		port: 3040
+		port: 3052
 	},
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@import "./src/styles/index.scss";`
+				additionalData: `@use "./src/styles/global.scss" as *;`
 			}
 		},
 		postcss: {

@@ -24,6 +24,5 @@
         "parser": "@typescript-eslint/parser"
       }
     }
-  ],
-	"rules": {}
+  ]
 }
