@@ -1,8 +1,7 @@
+<script lang="ts">
+	import { countTodo } from '../store';
+</script>
+
 <div>
-	<span>count: 0</span>
-	<div>
-		<button>ALL</button>
-		<button>ACTIVE</button>
-		<button>DONE</button>
-	</div>
+	<span>count: {$countTodo}</span>
 </div>

@@ -8,4 +8,5 @@
 	<TodoList />
 </main>
 
+<!-- svelte-ignore css-unused-selector -->
 <style lang="scss"></style>
