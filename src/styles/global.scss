@@ -1,20 +1,10 @@
 @import './colors';
 @import './font';
-@import './reset';
 
 * {
 	font-family: 'Pretendard' !important;
 }
 
-body {
+:global(body) {
 	background-color: #f6f6f6;
-}
-
-input,
-button {
-	border-style: groove;
-}
-
-input {
-	width: 200px;
 }

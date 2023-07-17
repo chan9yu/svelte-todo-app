@@ -26,6 +26,7 @@
 		"prepare:permission": "chmod +x .husky/*"
 	},
 	"dependencies": {
+		"reset-css": "^5.0.1",
 		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
