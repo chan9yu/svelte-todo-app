@@ -22,7 +22,7 @@ const setFormTodo = () => {
 
 const setTodoData = () => {
 	const todoData = { ...initTodoData };
-	const { subscribe, update } = writable(todoData);
+	const { set, subscribe, update } = writable(todoData);
 
 	const addTodo = (content: string) => {
 		if (!content) return alert('빈 값 입니다!');
@@ -85,6 +85,7 @@ const setTodoData = () => {
 	};
 
 	return {
+		set,
 		subscribe,
 		addTodo,
 		editTodo,

@@ -1,9 +1,15 @@
 <script lang="ts">
+	import type { Todo } from '../@types';
 	import { todoForm, todos } from '../store';
+	import { setTodosToStorage } from '../utils';
+
+	let todoList: Todo[];
+	todos.subscribe(data => (todoList = data.todoList));
 
 	const addTodo = () => {
 		todos.addTodo($todoForm);
 		todoForm.resetForm();
+		setTodosToStorage(todoList);
 	};
 
 	const handleKeyup = (e: KeyboardEvent) => e.key === 'Enter' && addTodo();
