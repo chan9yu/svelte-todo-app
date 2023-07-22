@@ -1,6 +1,9 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import autoprefixer from 'autoprefixer';
+import path from 'path';
 import { defineConfig, UserConfig } from 'vite';
+
+const pathSrc = path.resolve(__dirname, './src');
 
 const config = <UserConfig>defineConfig({
 	plugins: [svelte()],
@@ -12,7 +15,7 @@ const config = <UserConfig>defineConfig({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@use "./src/styles/global.scss" as *;`
+				additionalData: `@use "${pathSrc}/styles/global.scss" as *;`
 			}
 		},
 		postcss: {
