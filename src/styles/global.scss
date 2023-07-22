@@ -1,10 +1,18 @@
-@import './colors';
+@import './variables';
 @import './font';
 
 * {
 	font-family: 'Pretendard' !important;
 }
 
-:global(body) {
-	background-color: #f6f6f6;
+body {
+	background-color: $gray-600;
+	color: $gray-100;
+	font-size: 14px;
+	font-weight: 400;
+	overflow: overlay;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
