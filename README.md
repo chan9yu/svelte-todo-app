@@ -35,7 +35,7 @@ Svelte를 사용하여 만든 간단한 Todo 앱입니다.
   <a href="#readme-top">맨 위로</a>
 </p>
 
-## Built With
+## Tech Stack
 
 - <img src="https://img.shields.io/badge/svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white">
 - <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
