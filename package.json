@@ -3,6 +3,10 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/svelte-todo-app/"
+	},
 	"homepage": "https://chan9yu.github.io/svelte-todo-app/",
 	"lint-staged": {
 		"**/*.{ts,svelte}": [
