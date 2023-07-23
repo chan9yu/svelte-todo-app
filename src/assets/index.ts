@@ -1,7 +1,7 @@
+export { default as paperPng } from './images/paper.png';
 export { default as stickyNotesPng } from './images/sticky-notes.png';
 
 export { default as addSvg } from './svgs/add.svg';
-export { default as articleSvg } from './svgs/article.svg';
 export { default as checkSvg } from './svgs/check.svg';
 export { default as deleteSvg } from './svgs/delete.svg';
 export { default as editSvg } from './svgs/edit.svg';
