@@ -12,6 +12,8 @@ Svelte를 사용하여 만든 간단한 Todo 앱입니다.
 <br />
 할 일을 추가, 편집 및 삭제할 수 있습니다.
 
+![](https://raw.githubusercontent.com/chan9yu/svelte-todo-app/master/public/screenshot.png)
+
 <br />
 
 ## Features
