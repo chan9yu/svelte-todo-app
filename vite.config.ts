@@ -10,7 +10,7 @@ const config = <UserConfig>defineConfig({
 	base: '/svelte-todo-app/',
 	server: {
 		host: 'localhost',
-		port: 3052
+		port: 3050
 	},
 	css: {
 		preprocessorOptions: {
