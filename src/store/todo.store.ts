@@ -8,25 +8,11 @@ const initTodoData: TodoStore = {
 	editMode: ''
 };
 
-const setFormTodo = () => {
-	const todoValue = '';
-	const { set, subscribe, update } = writable(todoValue);
-
-	return {
-		subscribe,
-		set,
-		update,
-		resetForm: () => set('')
-	};
-};
-
 const setTodoData = () => {
 	const todoData = { ...initTodoData };
 	const { set, subscribe, update } = writable(todoData);
 
 	const addTodo = (content: string) => {
-		if (!content) return alert('빈 값 입니다!');
-
 		const newTodo: Todo = {
 			id: uuid(),
 			content,
@@ -101,6 +87,11 @@ const setCountTodo = () => {
 	return count;
 };
 
-export const todoForm = setFormTodo();
+const setDoneCountTodo = () => {
+	const doneCount = derived(todos, $todo => $todo.todoList.filter(todo => todo.done).length);
+	return doneCount;
+};
+
 export const todos = setTodoData();
 export const countTodo = setCountTodo();
+export const doneCountTodo = setDoneCountTodo();

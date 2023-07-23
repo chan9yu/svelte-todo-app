@@ -1,11 +1,11 @@
-@import './variables';
 @import './font';
+@import './variables';
 
 * {
 	font-family: 'Pretendard' !important;
 }
 
-body {
+:global(body) {
 	background-color: $gray-600;
 	color: $gray-100;
 	font-size: 14px;

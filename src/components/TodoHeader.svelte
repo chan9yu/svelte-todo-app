@@ -1,25 +1,43 @@
 <script lang="ts">
-	import type { Todo } from '../@types';
-	import { todoForm, todos } from '../store';
-	import { setTodosToStorage } from '../utils';
-
-	let todoList: Todo[];
-	todos.subscribe(data => (todoList = data.todoList));
-
-	const addTodo = () => {
-		todos.addTodo($todoForm);
-		todoForm.resetForm();
-		setTodosToStorage(todoList);
-	};
-
-	const handleKeyup = (e: KeyboardEvent) => e.key === 'Enter' && addTodo();
-	const handleClick = () => addTodo();
+	import { stickyNotesPng } from '../assets';
 </script>
 
-<header>
-	<div>
-		<h1>TODO LIST</h1>
-		<input type="text" bind:value={$todoForm} on:keyup={handleKeyup} />
-		<button on:click={handleClick}>ADD</button>
-	</div>
+<header class="todo-header">
+	<img class="todo-header__img" src={stickyNotesPng} alt="title-img" />
+	<h1>
+		<span class="todo-header__title todo-header__title--primary-dark">To</span>
+		<span class="todo-header__title todo-header__title--primary">do</span>
+	</h1>
 </header>
+
+<style lang="scss" scoped>
+	.todo-header {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		position: relative;
+
+		&__img {
+			width: 48px;
+			height: 48px;
+		}
+
+		> h1 {
+			display: flex;
+		}
+
+		&__title {
+			font-size: 40px;
+			font-weight: 900;
+			line-height: normal;
+
+			&--primary {
+				color: $primary;
+			}
+
+			&--primary-dark {
+				color: $primary-dark;
+			}
+		}
+	}
+</style>
